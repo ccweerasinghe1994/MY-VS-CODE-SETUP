@@ -218,6 +218,90 @@ ifconfig
 ```
 
 ## 05 - Remote development
+
+### 002 Remote SSH
+![Alt text](image-25.png)
+
+![Alt text](image-26.png)
+
+go to your remote machine and run following command
+
+```shell
+sudo apt-get install openssh-server
+```
+
+on your remote machine run following command
+```shell
+ifconfig
+```
+
+if the above command doesn't work, run following command
+```shell
+sudo apt-get install net-tools
+```
+
+```shell
+ens33: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 172.26.109.190  netmask 255.255.240.0  broadcast 172.26.111.255
+        inet6 fe80::27f0:ed74:e48a:a024  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:63:45:db  txqueuelen 1000  (Ethernet)
+        RX packets 243730  bytes 356091262 (356.0 MB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 34946  bytes 4395614 (4.3 MB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+```
+
+then go to your local machine and run following command
+you can ssh in to the remote machine using the above command
+```shell
+ssh chamara@172.26.109.190
+```
+
+```shell
+sudo service ssh status
+```
+
+```shell
+sh.service - OpenBSD Secure Shell server
+     Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enabled)
+     Active: active (running) since Mon 2023-11-20 17:23:30 +0530; 15min ago
+       Docs: man:sshd(8)
+             man:sshd_config(5)
+   Main PID: 25071 (sshd)
+      Tasks: 1 (limit: 9387)
+     Memory: 1.8M
+        CPU: 270ms
+     CGroup: /system.slice/ssh.service
+             └─25071 "sshd: /usr/sbin/sshd -D [listener] 0 of 10-100 startups"
+```
+
+to use ssh in vs code, we need to install remote ssh extension
+
+then type `ctrl + shift + p` and type `remote ssh` and select `connect to host`
+
+![Alt text](image-27.png)
+
+![Alt text](image-28.png)
+
+![Alt text](image-29.png)
+
+![Alt text](image-30.png)
+
+![Alt text](image-31.png)
+
+![Alt text](image-32.png)
+
+![Alt text](image-33.png)
+
+now you can open files inside the remote machine
+
+![Alt text](image-34.png)
+### 003 Docker for VSCode
+
+
+### 004 Developing inside a container
+
+
 ## 06 - Favorite extensions
 ## 07 - Git
 ## 08 - Python in VSCode
