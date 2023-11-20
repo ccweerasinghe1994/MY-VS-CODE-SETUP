@@ -1,4 +1,4 @@
-# MY VS CODE SETUP
+# [MY VS CODE SETUP](https://github.com/users/ccweerasinghe1994/projects/8/views/1)
 
 ## 02 - First steps with VSCode
 ### 002 Visual Studio Code interface
@@ -75,9 +75,45 @@ we can use workspaces to link multiple code repos together.
 
 will have version control for each workspace
 ### 007 VSCode Extensions
+let's open vs code extensions: `ctrl + shift + x`
+
+![Alt text](image-10.png)
+
+let's install gitLens
+
+![Alt text](image-11.png)
+
+we can see the logs of a extension 
+
+![Alt text](image-12.png)
+
 
 
 ## 03 - Coding with Code
+
+### Intellisense
+
+IntelliSense is a general term for various code editing features including: code completion, parameter info, quick info, and member lists. IntelliSense features are sometimes called by other names such as "code completion", "content assist", and "code hinting."
+
+vs code https://code.visualstudio.com/docs/editor/intellisense
+
+to see the intellisense: `ctrl + space`
+or type `.` after a variable(triggers intellisense)
+
+we can use IntelliCode extension to get better intellisense
+
+![Alt text](image-13.png)
+
+https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode
+
+
+
+### Linting and formatting
+### Refactoring with VSCode
+### Terminal and Tasks
+### The Debugger
+### Debugging front end code
+
 ## 04 - Web design
 ## 05 - Remote development
 ## 06 - Favorite extensions
