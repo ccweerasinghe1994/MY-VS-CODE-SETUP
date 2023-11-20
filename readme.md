@@ -436,6 +436,53 @@ or open it using vscode
 
 ### 004 Developing inside a container
 
+we can use dev container with our docker file to develop inside a container.
+
+anyone who has docker installed can use this feature.
+
+![Alt text](image-42.png)
+
+`devcontainer.json`
+
+```json
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
+{
+	"name": "Manager Server Dev Container",
+	"build": {
+		// Sets the run context to one level up instead of the .devcontainer folder.
+		"context": "..",
+		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+		"dockerfile": "../Dockerfile"
+	}
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	,
+	"forwardPorts": [
+		8080
+	]
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "cat /etc/os-release",
+	// Configure tool-specific properties.
+	,
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"humao.rest-client",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"eamodio.gitlens",
+				"dbaeumer.vscode-eslint"
+			]
+		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {}
+	}
+	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "devcontainer"
+}
+```
 
 ## 06 - Favorite extensions
 ## 07 - Git
