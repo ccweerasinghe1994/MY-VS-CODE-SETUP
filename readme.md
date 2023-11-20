@@ -109,6 +109,44 @@ https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodei
 
 
 ### Linting and formatting
+
+let's install following extensions
+
+![Alt text](image-14.png)
+
+![Alt text](image-15.png)
+
+we can create a config file
+
+```json
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": "standard-with-typescript",
+    "overrides": [],
+    "parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "rules": {
+        "no-trailing-spaces": "warn",
+        "@typescript-eslint/no-misused-promises": "warn",
+        "indent": "off",
+        "@typescript-eslint/indent": "warn",
+        "@typescript-eslint/explicit-function-return-type": "warn",
+        "space-before-function-paren": "off",
+        "@typescript-eslint/space-before-function-paren": "warn"
+    }
+}
+```
+which will show up in the browser
+
+![Alt text](image-16.png)
+
+
+
 ### Refactoring with VSCode
 ### Terminal and Tasks
 ### The Debugger
