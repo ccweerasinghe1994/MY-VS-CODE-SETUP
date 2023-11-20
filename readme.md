@@ -192,6 +192,13 @@ Tasks
 ```
 
 ### The Debugger
+
+![Alt text](image-21.png)
+
+![Alt text](image-22.png)
+
+vs code debugger https://github.com/microsoft/vscode-recipes
+
 ### Debugging front end code
 
 ## 04 - Web design
