@@ -200,7 +200,9 @@ Tasks
 vs code debugger https://github.com/microsoft/vscode-recipes
 
 ### Debugging front end code
-
+```json
+![Alt text](image-23.png)
+```
 ## 04 - Web design
 ## 05 - Remote development
 ## 06 - Favorite extensions
