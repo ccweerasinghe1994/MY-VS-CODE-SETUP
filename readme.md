@@ -148,6 +148,20 @@ which will show up in the browser
 
 
 ### Refactoring with VSCode
+
+to rename a variable: `f2`
+this will changes all the occurrences of the variable in whole project
+
+![Alt text](image-17.png)
+
+this will update all the files 
+
+![Alt text](image-18.png)
+
+![Alt text](image-19.png)
+
+to refactor a method: `ctrl + shift + r`
+
 ### Terminal and Tasks
 ### The Debugger
 ### Debugging front end code
