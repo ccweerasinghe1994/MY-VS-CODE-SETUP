@@ -211,6 +211,12 @@ we can use emmet to write html faster
 we can use emmet to write css faster
 ### 004 Live Server Extension
 ![Alt text](image-24.png)
+
+```shell
+ipconfig
+ifconfig
+```
+
 ## 05 - Remote development
 ## 06 - Favorite extensions
 ## 07 - Git
