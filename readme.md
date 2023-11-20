@@ -68,6 +68,12 @@ sample settings.json file
 ```
 
 ### 006 Workspaces
+
+we can use workspaces to link multiple code repos together.
+
+![Alt text](image-9.png)
+
+will have version control for each workspace
 ### 007 VSCode Extensions
 
 
