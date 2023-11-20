@@ -39,7 +39,11 @@ you can `Ctrl + click` on a method to go to its definition.
 multiple cursors: `alt + click`
 
 
-### 
+### 005 VSCode settings
+### 006 Workspaces
+### 007 VSCode Extensions
+
+
 ## 03 - Coding with Code
 ## 04 - Web design
 ## 05 - Remote development
