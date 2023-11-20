@@ -45,6 +45,28 @@ let's install vs code icons
 
 ![Alt text](image-7.png)
 
+to open vs code settings: `ctrl + ,`
+
+when we are changing the settings, we can see the changes in the json file.
+there are user settings and workspace settings.
+
+![Alt text](image-8.png)
+
+sample settings.json file
+
+```json
+{   
+    // Editor font related Settings
+    "editor.fontSize": 16,
+    "editor.fontFamily": "'Monaspace Argon','Monaspace Neon',Consolas, 'Courier New', monospace",
+    "editor.fontWeight": "400",
+    "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
+    // this is the terminal settings
+    "terminal.integrated.fontFamily": "'Monaspace Krypton','Monaspace Radon','Monaspace Xenon','Monaspace Argon'",
+    "files.autoSave": "onFocusChange"
+}
+```
+
 ### 006 Workspaces
 ### 007 VSCode Extensions
 
