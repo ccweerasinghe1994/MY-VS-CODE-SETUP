@@ -40,6 +40,11 @@ multiple cursors: `alt + click`
 
 
 ### 005 VSCode settings
+
+let's install vs code icons
+
+![Alt text](image-7.png)
+
 ### 006 Workspaces
 ### 007 VSCode Extensions
 
