@@ -297,7 +297,142 @@ now you can open files inside the remote machine
 
 ![Alt text](image-34.png)
 ### 003 Docker for VSCode
+install docker extension
 
+![Alt text](image-35.png)
+
+The Docker extension makes it easy to build, manage, and deploy containerized applications from Visual Studio Code. It also provides one-click debugging of Node.js, Python, and .NET inside a container.
+
+this extension will provide 
+- syntax highlighting
+- snippets
+- linting
+- debugging
+- IntelliSense
+- Dockerfile support
+- Docker Compose support
+- Docker commands (start, stop, restart, etc)
+- Docker Explorer
+- Docker view for inspecting containers and images
+- Kubernetes support
+- Azure Container Registry support
+- Azure Container Instances support
+- Azure IoT Edge support
+- Remote Docker support
+- WSL 2 support
+- Volume management
+- Docker Compose v3 support
+- Docker Compose debugging
+- Docker Compose Tasks
+- Docker Compose Explorer
+- Docker Compose view for inspecting containers, networks, and volumes
+
+and much more!
+
+to add docker to your project
+
+![Alt text](image-36.png)
+
+this will ask questions about your project and create a docker file for you
+```dockerfile
+FROM node:lts-alpine
+# ENV NODE_ENV=production
+ENV NODE_ENV=development
+WORKDIR /usr/src/app
+COPY ["package.json", "package-lock.json*", "npm-shrinkwrap.json*", "./"]
+# RUN npm install --production --silent && mv node_modules ../
+RUN npm install
+COPY . .
+EXPOSE 8080
+RUN chown -R node /usr/src/app
+USER node
+CMD ["npm", "start"]
+
+```
+```dockerignore
+**/.classpath
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/.project
+**/.settings
+**/.toolstarget
+**/.vs
+**/.vscode
+**/*.*proj.user
+**/*.dbmdl
+**/*.jfm
+**/charts
+**/docker-compose*
+**/compose*
+**/Dockerfile*
+**/node_modules
+**/npm-debug.log
+**/obj
+**/secrets.dev.yaml
+**/values.dev.yaml
+LICENSE
+README.md
+
+```docker-compose.yml```
+```yml
+version: '3.4'
+
+services:
+  managerserver:
+    image: managerserver
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 8080:8080
+
+```
+
+`docker-compose.debug.yml`
+```yml
+version: '3.4'
+
+services:
+  managerserver:
+    image: managerserver
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000:3000
+      - 9229:9229
+    command: ["node", "--inspect=0.0.0.0:9229", "index.js"]
+
+
+```
+
+to start the docker container, type `ctrl + shift + p` and type `docker compose up`
+
+![Alt text](image-38.png)
+
+now open the docker extension and you can see the running containers
+
+![Alt text](image-37.png)
+
+you have following options
+
+![Alt text](image-39.png)
+
+logs
+
+![Alt text](image-40.png)
+
+shell
+
+![Alt text](image-41.png)
+
+or open it using vscode
 
 ### 004 Developing inside a container
 
