@@ -163,6 +163,34 @@ this will update all the files
 to refactor a method: `ctrl + shift + r`
 
 ### Terminal and Tasks
+
+Tasks
+
+![Alt text](image-20.png)
+
+```json
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        },
+        {
+            "type": "npm",
+            "script": "install",
+            "group": "clean",
+            "problemMatcher": [],
+            "label": "npm: install",
+            "detail": "install dependencies from package"
+        }
+    ]
+}
+```
+
 ### The Debugger
 ### Debugging front end code
 
