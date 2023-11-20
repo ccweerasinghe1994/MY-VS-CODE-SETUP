@@ -46,6 +46,7 @@ multiple cursors: `alt + click`
 ## 06 - Favorite extensions
 ## 07 - Git
 ## 08 - Python in VSCode
+
 ## 09 - Java in VSCode
 ## 10 - C++ in VSCode (and C#)
 ## 11 - Creating a VSCode extension
