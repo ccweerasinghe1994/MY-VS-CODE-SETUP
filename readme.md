@@ -514,7 +514,52 @@ vue
 ![Alt text](image-51.png)
 
 ![Alt text](image-52.png)
+
 ## 07 - Git
+
+### Git basic commands
+```shell
+git status
+
+git init
+
+git add .
+
+git commit -m "initial commit"
+
+git push
+
+```
+
+create a github account to push code
+
+### Git in VS Code
+
+![Alt text](image-53.png)
+
+![Alt text](image-54.png)
+
+![Alt text](image-55.png)
+
+![Alt text](image-56.png)
+
+![Alt text](image-57.png)
+
+![Alt text](image-58.png)
+
+### Git commit
+
+### Git branches
+
+### Handling commit conflicts
+
+### Git Lens extension
+
+### Markdown language
+
+### Live Share extension
+
+
 ## 08 - Python in VSCode
 
 ## 09 - Java in VSCode

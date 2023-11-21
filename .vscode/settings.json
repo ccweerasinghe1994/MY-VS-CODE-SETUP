@@ -1,6 +1,6 @@
 {
 	"editor.fontSize": 16,
 	"editor.fontWeight": "400",
-	"editor.fontFamily": "'Monaspace Xenon',Consolas, 'Courier New', monospace",
+	"editor.fontFamily": "'Monaspace Radon',Consolas, 'Courier New', monospace",
 	"cSpell.words": ["calt", "dlig", "Monaspace"]
 }
