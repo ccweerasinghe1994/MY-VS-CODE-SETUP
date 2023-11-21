@@ -485,6 +485,35 @@ anyone who has docker installed can use this feature.
 ```
 
 ## 06 - Favorite extensions
+
+### 002 Visual adjustments extensions
+icons
+
+![Alt text](image-43.png)
+
+ ![Alt text](image-44.png)
+
+### 003 Productivity extensions
+![Alt text](image-45.png)
+
+![Alt text](image-46.png)
+
+![Alt text](image-47.png)
+
+![Alt text](image-48.png)
+
+### 004 Frameworks (React, Vue, Angular)
+
+Angular
+
+![Alt text](image-49.png)
+
+vue
+![Alt text](image-50.png)
+
+![Alt text](image-51.png)
+
+![Alt text](image-52.png)
 ## 07 - Git
 ## 08 - Python in VSCode
 
@@ -492,3 +521,4 @@ anyone who has docker installed can use this feature.
 ## 10 - C++ in VSCode (and C#)
 ## 11 - Creating a VSCode extension
 ## 12 - Visual Studio Code insights
+
