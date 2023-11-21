@@ -723,6 +723,126 @@ for debug
 
 
 ## 09 - Java in VSCode
+![Alt text](image-72.png)
+![Alt text](image-73.png)
+
+![Alt text](image-74.png)
+![Alt text](image-75.png)
+```java
+public class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Person [name=" + name + ", age=" + age + "]";
+    }
+
+    @Override
+    public int hashCode() {
+        final int prime = 31;
+        int result = 1;
+        result = prime * result + ((name == null) ? 0 : name.hashCode());
+        result = prime * result + age;
+        return result;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj)
+            return true;
+        if (obj == null)
+            return false;
+        if (getClass() != obj.getClass())
+            return false;
+        Person other = (Person) obj;
+        if (name == null) {
+            if (other.name != null)
+                return false;
+        } else if (!name.equals(other.name))
+            return false;
+        if (age != other.age)
+            return false;
+        return true;
+    }
+
+    
+    
+}
+
+```
+
+![Alt text](image-76.png)
+![Alt text](image-77.png)
+![Alt text](image-78.png)
+
+download the jar files
+we need to add it lib folder
+![Alt text](image-82.png)
+
+![Alt text](image-81.png)
+
+![Alt text](image-80.png)
+
+![Alt text](image-83.png)
+
+![Alt text](image-84.png)
+
+![Alt text](image-85.png)
+![Alt text](image-86.png)
+![Alt text](image-87.png)
+![Alt text](image-88.png)
+
+![Alt text](image-89.png)
+
+![Alt text](image-90.png)
+
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "com.example.chamara.App",
+            "projectName": "demo"
+        }
+    ]
+}
+```
+
+![Alt text](image-91.png)
 ## 10 - C++ in VSCode (and C#)
 ## 11 - Creating a VSCode extension
 ## 12 - Visual Studio Code insights
