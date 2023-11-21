@@ -554,15 +554,21 @@ we add node modules to git ignore file
 ![Alt text](image-59.png)
 
 ### Git branches
+![Alt text](image-60.png)
+to create a branch: `ctrl + shift + p` and type `git branch` and select `git: create branch`
+```shell
+git checkout -b "feature/branch"
+```
+![Alt text](image-61.png)
 
 ### Handling commit conflicts
-
+![Alt text](image-62.png)
 ### Git Lens extension
-
+install git lens extension
 ### Markdown language
-
+vscode has a markdown previewer
 ### Live Share extension
-
+install live share extension
 
 ## 08 - Python in VSCode
 
