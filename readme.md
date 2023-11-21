@@ -514,7 +514,62 @@ vue
 ![Alt text](image-51.png)
 
 ![Alt text](image-52.png)
+
 ## 07 - Git
+
+### Git basic commands
+```shell
+git status
+
+git init
+
+git add .
+
+git commit -m "initial commit"
+
+git push
+
+```
+
+create a github account to push code
+
+### Git in VS Code
+
+![Alt text](image-53.png)
+
+![Alt text](image-54.png)
+
+![Alt text](image-55.png)
+
+![Alt text](image-56.png)
+
+![Alt text](image-57.png)
+
+![Alt text](image-58.png)
+
+### Git commit
+
+we add node modules to git ignore file
+
+![Alt text](image-59.png)
+
+### Git branches
+![Alt text](image-60.png)
+to create a branch: `ctrl + shift + p` and type `git branch` and select `git: create branch`
+```shell
+git checkout -b "feature/branch"
+```
+![Alt text](image-61.png)
+
+### Handling commit conflicts
+![Alt text](image-62.png)
+### Git Lens extension
+install git lens extension
+### Markdown language
+vscode has a markdown previewer
+### Live Share extension
+install live share extension
+
 ## 08 - Python in VSCode
 
 ## 09 - Java in VSCode
