@@ -549,6 +549,10 @@ create a github account to push code
 
 ### Git commit
 
+we add node modules to git ignore file
+
+![Alt text](image-59.png)
+
 ### Git branches
 
 ### Handling commit conflicts
