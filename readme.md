@@ -571,6 +571,156 @@ vscode has a markdown previewer
 install live share extension
 
 ## 08 - Python in VSCode
+### 003 Python in VSCode
+![Alt text](image-63.png)
+
+![Alt text](image-64.png)
+
+### 004 Python debugger
+
+![Alt text](image-65.png)
+```json
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        }
+    ]
+} 
+```
+### 006 Python unit testing
+![Alt text](image-66.png)
+![Alt text](image-67.png)
+![Alt text](image-68.png)
+![Alt text](image-69.png)
+
+this will create this settings.json
+```json
+{
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./test",
+        "-p",
+        "*test*.py"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true
+}
+```
+
+### 007 Python with Docker
+
+![Alt text](image-70.png)
+
+```dockerfile
+# For more information, please refer to https://aka.ms/vscode-docker-python
+FROM python:3.10-slim
+
+# Keeps Python from generating .pyc files in the container
+ENV PYTHONDONTWRITEBYTECODE=1
+
+# Turns off buffering for easier container logging
+ENV PYTHONUNBUFFERED=1
+
+# Install pip requirements
+COPY requirements.txt .
+RUN python -m pip install -r requirements.txt
+
+WORKDIR /app
+COPY . /app
+
+# Creates a non-root user with an explicit UID and adds permission to access the /app folder
+# For more info, please refer to https://aka.ms/vscode-docker-python-configure-containers
+RUN adduser -u 5678 --disabled-password --gecos "" appuser && chown -R appuser /app
+USER appuser
+
+# During debugging, this entry point will be overridden. For more information, please refer to https://aka.ms/vscode-docker-python-debug
+CMD ["python", "first.py"]
+
+```
+
+```dockerignore
+**/__pycache__
+**/.venv
+**/.classpath
+**/.dockerignore
+**/.env
+**/.git
+**/.gitignore
+**/.project
+**/.settings
+**/.toolstarget
+**/.vs
+**/.vscode
+**/*.*proj.user
+**/*.dbmdl
+**/*.jfm
+**/bin
+**/charts
+**/docker-compose*
+**/compose*
+**/Dockerfile*
+**/node_modules
+**/npm-debug.log
+**/obj
+**/secrets.dev.yaml
+**/values.dev.yaml
+LICENSE
+README.md
+
+```
+
+```docker-compose.yml
+version: '3.4'
+
+services:
+  pythonpractice:
+    image: pythonpractice
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+```
+```docker-compose.debug.yml
+version: '3.4'
+
+services:
+  pythonpractice:
+    image: pythonpractice
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 first.py "]
+    ports:
+      - 5678:5678
+
+```
+```requirements.txt
+# To ensure app dependencies are ported from your virtual environment/host machine into your container, run 'pip freeze > requirements.txt' in the terminal to overwrite this file
+requests
+```
+
+for debug 
+
+![Alt text](image-71.png)
+
+
 
 ## 09 - Java in VSCode
 ## 10 - C++ in VSCode (and C#)
