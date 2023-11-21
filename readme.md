@@ -503,6 +503,17 @@ icons
 ![Alt text](image-48.png)
 
 ### 004 Frameworks (React, Vue, Angular)
+
+Angular
+
+![Alt text](image-49.png)
+
+vue
+![Alt text](image-50.png)
+
+![Alt text](image-51.png)
+
+![Alt text](image-52.png)
 ## 07 - Git
 ## 08 - Python in VSCode
 
