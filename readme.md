@@ -494,6 +494,13 @@ icons
  ![Alt text](image-44.png)
 
 ### 003 Productivity extensions
+![Alt text](image-45.png)
+
+![Alt text](image-46.png)
+
+![Alt text](image-47.png)
+
+![Alt text](image-48.png)
 
 ### 004 Frameworks (React, Vue, Angular)
 ## 07 - Git
